@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 import parkinglot.vehicle.Vehicle;
 import parkinglot.vehicle.VehicleSize;
 
-class ParkingFloor {
+public class ParkingFloor {
 
     private final Map<String, ParkingSpot> spots;
     private final int floorNumber;
