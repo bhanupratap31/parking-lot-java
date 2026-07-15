@@ -44,18 +44,15 @@ public class ParkingSpot {
             return false;
         }
 
-        switch (vehicle.getSize()) {
-            case SMALL:
-                return spotSize == VehicleSize.SMALL;
-
-            case MEDIUM:
-                return spotSize == VehicleSize.MEDIUM;
-
-            case LARGE:
-                return spotSize == VehicleSize.LARGE;
-
-            default:
-                return false;
-        }
+        return switch (vehicle.getSize()) {
+            case SMALL ->
+                spotSize == VehicleSize.SMALL;
+            case MEDIUM ->
+                spotSize == VehicleSize.MEDIUM;
+            case LARGE ->
+                spotSize == VehicleSize.LARGE;
+            default ->
+                false;
+        };
     }
 }
