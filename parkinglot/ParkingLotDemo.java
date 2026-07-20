@@ -5,7 +5,11 @@ import parkinglot.entities.ParkingFloor;
 import parkinglot.entities.ParkingSpot;
 import parkinglot.entities.ParkingTicket;
 import parkinglot.strategy.fee.VehicleBasedStrategy;
-import parkinglot.vehicle.*;
+import parkinglot.vehicle.Bike;
+import parkinglot.vehicle.Car;
+import parkinglot.vehicle.Truck;
+import parkinglot.vehicle.Vehicle;
+import parkinglot.vehicle.VehicleSize;
 
 public class ParkingLotDemo {
 
